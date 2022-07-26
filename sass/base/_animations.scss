@@ -1,0 +1,80 @@
+
+@keyframes filling-heart {
+
+    0%{background-color: white;
+ } 
+    
+    30%{
+     background-color: rgb(205, 91, 157);
+     //color:rgb(205, 91, 157);
+     box-shadow: rgb(205, 91, 157);
+ }
+ 
+ 100%{
+     background-color: rgb(205, 91, 157);
+     color:rgb(205, 91, 157);
+     box-shadow: rgb(205, 91, 157);
+ }
+ }
+
+//animation second pages
+
+@keyframes moveInBottom{
+    0%{
+        opacity:0;
+        transform:translateY(2rem);
+    }
+   
+
+    20%{
+        opacity:0;
+    }
+    70%{
+        opacity:0.5;
+
+    }
+
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+}
+
+@keyframes shiftButton {
+    0%{
+        opacity: 0;
+        transform:translateX(1rem);
+    }
+
+    100%{
+        transform: translate(-5.5rem);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes shiftPrice {
+    0%  {left:0rem; top:0rem;}
+    100%  {right:5.5rem; top:0rem;}
+  }
+
+/*@keyframes textRetreat {
+    0% { width:29.5rem;
+
+    }
+
+    100%{
+    width: 24rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    resize: horizontal;
+    }
+  }*/
+  
+  // See again because it is wrong.
+@keyframes rotate {
+    50% {transform: rotate(180deg);}
+    
+}
+

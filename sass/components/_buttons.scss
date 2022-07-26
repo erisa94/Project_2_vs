@@ -1,0 +1,26 @@
+.head__first-btn{
+            
+    border:none;
+    margin-bottom: 2.2rem;
+    padding:1.5rem 2rem 1.5rem 2rem;
+    border-radius: 3rem;
+    background: ( linear-gradient(#FF79DA, #9356DC));
+    box-shadow: 3px 7px 10px rgb(191, 188, 188);
+    &:hover {
+        background: #e96fd5;
+        box-shadow: 5px 10px 10px rgb(191, 188, 188) ;
+      }
+
+&__text{
+color: white;
+font-size: 1.6rem;
+}
+
+&--order{
+  margin-left: 60rem;
+  margin-right: 60rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+}
+

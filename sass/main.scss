@@ -1,0 +1,379 @@
+@import "base/animations";
+@import "base/base";
+@import "base/typoghraphy";
+
+@import "components/buttons";
+@import "components/heart";
+@import "components/logo";
+
+@import "layout/footer";
+@import "layout/form";
+@import "layout/header";
+@import "layout/nav";
+
+@import "pages/home";
+@import "pages/secondary_pages";
+
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/utilities";
+@import "utils/variables";
+
+
+/*I think I will write here and than as I continue I will divide it slowly 
+because I am getting panicky for the moment and I need to feel calm to continue*/
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.restaurants{
+    background-color: rgb(240, 233, 233);
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    &__text{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+
+    &__first-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    &__sec-row{
+        margin-left: 54rem;
+    }
+    &__fig{
+        width:42rem;
+        height:28rem;
+        background-color: white;
+        border-radius: 2rem;
+        margin-left:1rem;
+        margin-right:1rem;
+        box-shadow:5px 10px 10px px rgb(191, 188, 188) ;
+        &__img{
+            width:42rem;
+            height:22rem; 
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+
+        }
+
+        &__figcaption{
+            padding-left:1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        
+        }
+
+        &__new{
+            position:relative;
+            text-align:center;
+        
+            &__top-right {
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+                background-color: aquamarine;
+                color:rgb(113, 110, 110);
+                font-size: 1.5rem;
+                padding: .2rem 2.5rem .2rem 2.5rem;
+              }
+        }
+    }
+
+    
+}
+
+
+.New-York{
+    font-size: 1.4rem;
+    //padding-top: -1rem; // does not work.
+}
+
+.div-nameRestaurant-heart{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.restaurants__fig__name{
+    font-size:1.8rem;
+    font-weight: bold;  
+    
+}
+
+//The part up should be seen again and check with jonah who is a considered a block because they are becomming
+// to much nested and complicated. Relax just have a little patience.
+
+// palette css
+
+.fa-arrow-left{
+ font-size: 2.5rem;
+ margin-top: 3rem;
+ margin-right:62rem;
+ margin-left: 2rem;
+}
+.header-sec-page{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+
+    &__arrow{
+        text-decoration: none;
+        color: black;
+    }
+}
+.img-restaurant{
+    max-width: 100%; 
+    height: auto;
+    clip-path: inset(40% 0% 40% 0%);
+    margin-top: -40rem;
+    margin-bottom: -40rem;
+    display: inline;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: -1rem;
+    position: relative;
+}
+
+
+.restaurant{
+    background-color: #f2f2f2;
+    padding-top: 3rem;
+    margin-top: -3.5rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding-right:8.2rem;
+    padding-left:2rem;
+    position:absolute;     
+    }
+//Attention if you change the position of these two parts here your whole dic will change. Try to hide it in the code.
+.restaurant__name{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Shrikhand, cursive;
+        white-space: nowrap;
+        margin-right: 115rem;
+    }    
+
+.div-top{
+    display: flex;
+    flex-direction: row;}
+
+//dishes
+
+.restaurant__dishes__div{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant__dishes__up{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.restaurant__dishes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    &--3{
+        margin-left:47rem;
+        margin-right: 45rem;
+    }
+   
+    
+    &--animated-1{
+        animation: moveInBottom 2s ease-out;
+        
+    }
+
+    &--animated-2{
+        animation: moveInBottom 2s ease-out;
+        animation-delay: .05s;
+        
+    }
+
+    &--animated-3{
+        animation: moveInBottom 2s ease-out;
+        animation-delay: .2s;
+    
+    }
+
+
+}
+
+.dishes-order{
+    
+    font-size: 1.6rem;
+    padding-top: 3rem;
+    margin-bottom: .5rem;
+    text-decoration: double;
+    &__underline{
+        border: 2px solid #99E2D0;
+        height:3px;
+        width:4rem;
+        margin-bottom: 1.5rem;
+        margin-left: 4px;
+    }
+}
+
+
+
+
+.dishes{
+    @include dishes;
+    
+
+    &--1{
+        margin-right: 5rem;
+    }
+
+    &__name{
+        display: block;
+        padding-bottom: 1rem;
+        font-weight:bolder;
+    }
+
+    &__price{
+        padding-left: 3rem;
+        padding-right: 1rem;
+        font-weight: bolder;
+    }
+
+    &__ingredients{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+
+    }
+
+}
+
+//I am trying this new thing here because I am excited again. If this does not work something else will.
+
+.try{
+    display: flex;
+    flex-direction: row; 
+
+    &__green-box{
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        padding: 25px 0;
+        margin: 0 0 0 -2px;
+        background-color: #99E2D0;
+        width: 14%;
+        border-radius: 0 15px 15px 0;
+        transition: width 400ms;
+        /*display: inline;
+        padding: 1rem 2rem 0rem 2rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        background-color: #79c9b5;
+        margin-left: -1rem;
+        margin-bottom: 1.4rem;
+        opacity: 0;*/
+    
+            }
+    
+
+
+    /*&:hover > .try__green-box{
+        animation: shiftButton 2s ease-out;
+        animation-fill-mode: forwards;
+
+        //&:hover{
+            //animation: rotate 2s infinite;
+        //}
+    }*/
+
+    /*&:hover > .try__ingredients__dish{
+        animation: textRetreat 1s ease-out;
+        animation-fill-mode: forwards;  
+    }*/
+
+    &__dishes{
+        @include dishes;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__writtings{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //position: absolute;
+    }
+    &__price{
+        font-weight: bolder;
+        display: inline;
+        margin-top: 3rem;
+        margin-right: 1rem;
+        position: relative;
+        //top:0rem;
+        //left:42rem;
+        }
+    &__writtings:hover + .try__price{
+       animation: shiftPrice 1s ease-out;
+       animation-fill-mode: forwards;
+    }
+    
+    
+    // This is not working
+    /*&:hover > .try__writtings{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }*/ 
+   
+    // There is an animation for the price and the letters I am sure because this is not working. 
+    // Athough I feel that I am nearer now than before to finding out a way.
+    /* &:hover  .try__price{
+        animation: shiftPrice 1s;
+
+     }*/
+    
+    &__ingredients-dish{
+        margin-top: -.5rem;
+        padding-bottom: 1.5rem;
+       &::before{
+       content: "\A";
+       white-space: pre;
+
+       }
+    }
+
+    &__name-dish{
+    font-weight: bolder;
+    }
+     
+
+
+.fa-circle-check{
+    margin-top: 0.5rem;
+    font-size:2.5rem;
+    color:white;
+    // not the correct way. I need it to spin.
+    &:hover{
+        animation: rotate 2s infinite;
+    }
+}
+
+
+
+

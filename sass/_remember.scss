@@ -1,0 +1,23 @@
+/*The base/ directory contains the files that define the foundation of your site, 
+such as the typography and norms you want applied site-wide, like box-sizing*/
+
+
+/*components/ is where you store BEM blocks that are more self-contained, such as buttons.
+components are like "mini" layouts. Styles for small, reusable pieces of the site should reside here 
+(think buttons, forms, profile pictures, etc.)*/
+
+
+/*layouts/ is where you store BEM blocks which contain things that can be reused, such as a form or header for large layouts.
+layout contains styles for different aspects of the site's structural layout (think of areas like nav bars, headers, footers, etc.) */
+
+
+/*pages/  contains blocks of code that only apply to a single page. While you use buttons all over the site,
+  your home page has a quote section and a project grid that isn’t used anywhere else.
+  In other words, pages/ are rules specific to a single page and won't be reused elsewhere.*/
+
+
+/* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them).
+sometimes this is called abstracts*/
+
+
+/**/
