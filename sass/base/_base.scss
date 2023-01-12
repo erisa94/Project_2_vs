@@ -1,9 +1,11 @@
 /* Here will go the basic definitions of our entire project , they are valuable for all our project*/
 
-*{
+*,
+*::after,
+*::before{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html{
@@ -11,5 +13,6 @@ html{
 }
 
 body{
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }

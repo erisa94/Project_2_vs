@@ -3,40 +3,33 @@
     background-color: white;
   }
   30% {
-    background-color: #cd5b9d;
-    -webkit-box-shadow: #cd5b9d;
-            box-shadow: #cd5b9d;
+    background-color: rgb(205, 91, 157);
+    box-shadow: rgb(205, 91, 157);
   }
   100% {
-    background-color: #cd5b9d;
-    color: #cd5b9d;
-    -webkit-box-shadow: #cd5b9d;
-            box-shadow: #cd5b9d;
+    background-color: rgb(205, 91, 157);
+    color: rgb(205, 91, 157);
+    box-shadow: rgb(205, 91, 157);
   }
 }
-
 @keyframes filling-heart {
   0% {
     background-color: white;
   }
   30% {
-    background-color: #cd5b9d;
-    -webkit-box-shadow: #cd5b9d;
-            box-shadow: #cd5b9d;
+    background-color: rgb(205, 91, 157);
+    box-shadow: rgb(205, 91, 157);
   }
   100% {
-    background-color: #cd5b9d;
-    color: #cd5b9d;
-    -webkit-box-shadow: #cd5b9d;
-            box-shadow: #cd5b9d;
+    background-color: rgb(205, 91, 157);
+    color: rgb(205, 91, 157);
+    box-shadow: rgb(205, 91, 157);
   }
 }
-
 @-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
+    transform: translateY(2rem);
   }
   20% {
     opacity: 0;
@@ -46,16 +39,13 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
+    transform: translateY(2rem);
   }
   20% {
     opacity: 0;
@@ -65,37 +55,29 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @-webkit-keyframes shiftButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
-    -webkit-transform: translate(-5.5rem);
-            transform: translate(-5.5rem);
+    transform: translate(-5.5rem);
     opacity: 1;
   }
 }
-
 @keyframes shiftButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    transform: translateX(1rem);
   }
   100% {
-    -webkit-transform: translate(-5.5rem);
-            transform: translate(-5.5rem);
+    transform: translate(-5.5rem);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes shiftPrice {
   0% {
     left: 0rem;
@@ -106,7 +88,6 @@
     top: 0rem;
   }
 }
-
 @keyframes shiftPrice {
   0% {
     left: 0rem;
@@ -117,39 +98,151 @@
     top: 0rem;
   }
 }
-
-/*@keyframes textRetreat {
-    0% { width:29.5rem;
-
-    }
-
-    100%{
-    width: 24rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    resize: horizontal;
-    }
-  }*/
 @-webkit-keyframes rotate {
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
-
+@-webkit-keyframes rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes loader-wrapper {
+  0% {
+    opacity: 100%;
+    z-index: 1000;
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -10;
+  }
+}
+@keyframes loader-wrapper {
+  0% {
+    opacity: 100%;
+    z-index: 1000;
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -10;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
 /* Here will go the basic definitions of our entire project , they are valuable for all our project*/
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -157,7 +250,8 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .head__first-btn {
@@ -165,23 +259,17 @@ body {
   margin-bottom: 2.2rem;
   padding: 1.5rem 2rem 1.5rem 2rem;
   border-radius: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 3px 7px 10px #bfbcbc;
-          box-shadow: 3px 7px 10px #bfbcbc;
+  box-shadow: 3px 7px 10px rgb(191, 188, 188);
 }
-
 .head__first-btn:hover {
   background: #e96fd5;
-  -webkit-box-shadow: 5px 10px 10px #bfbcbc;
-          box-shadow: 5px 10px 10px #bfbcbc;
+  box-shadow: 5px 10px 10px rgb(191, 188, 188);
 }
-
 .head__first-btn__text {
   color: white;
   font-size: 1.6rem;
 }
-
 .head__first-btn--order {
   margin-left: 60rem;
   margin-right: 60rem;
@@ -192,7 +280,6 @@ body {
 .fa-heart {
   font-size: x-large;
 }
-
 .fa-heart:hover {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -214,7 +301,6 @@ body {
 .u-center-logo {
   text-align: center;
 }
-
 .u-center-logo__img-logo {
   width: 20rem;
   height: 4rem;
@@ -223,18 +309,12 @@ body {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 2rem;
   background-color: black;
   padding-bottom: 3rem;
 }
-
 .footer__title {
   font-family: Shrikhand, cursive;
   text-decoration: none;
@@ -245,37 +325,26 @@ body {
   margin-bottom: 2rem;
   margin-left: 2rem;
 }
-
 .footer__paragraphs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   padding-top: 2rem;
   margin-left: 15rem;
   margin-right: 15rem;
 }
-
 .footer__paragraphs__info {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   background-color: black;
 }
-
 .footer__paragraphs__info--2 {
   padding-left: 1rem;
 }
-
 .footer__paragraphs__info__utensils {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
-
 .footer__paragraphs__info__handshake {
   margin-right: 1rem;
 }
@@ -285,53 +354,38 @@ body {
 }
 
 .how-it-works {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
+  flex-direction: column;
+  align-self: center;
 }
 
 .how-it-works__first-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding-bottom: 3rem;
 }
 
 .how-it-works__btn--blue {
-  background-color: #daf5f5;
+  background-color: rgb(218, 245, 245);
   margin-left: 50rem;
   margin-right: 55rem;
 }
 
 .how-it-works__btn--grey {
-  background-color: #f7f1f1;
+  background-color: rgb(247, 241, 241);
   margin-left: 2rem;
   margin-right: 2rem;
   padding-right: 27rem;
 }
 
 .how-it-works__btn {
-  border: 1px solid #f7f1f1;
+  border: 1px solid rgb(247, 241, 241);
   padding-top: 3rem;
   padding-bottom: 3rem;
-  -webkit-box-shadow: 5px 10px 10px 2px #bfbcbc;
-          box-shadow: 5px 10px 10px 2px #bfbcbc;
+  box-shadow: 5px 10px 10px 2px rgb(191, 188, 188);
   border-radius: 3rem;
 }
-
 .how-it-works__btn__nr {
   border: 10px solid #9356DC;
   color: white;
@@ -339,13 +393,11 @@ body {
   border-radius: 4rem;
   margin-left: -1rem;
 }
-
 .how-it-works__btn__icon {
   font-size: medium;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 .how-it-works__btn__text {
   display: inline;
   font-size: 1.6rem;
@@ -356,13 +408,11 @@ body {
   text-align: center;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  background-color: #dddada;
+  background-color: rgb(221, 218, 218);
 }
-
 .u-center-location__icon {
   font-size: medium;
 }
-
 .u-center-location__text {
   display: inline;
   font-size: 1.7rem;
@@ -370,27 +420,18 @@ body {
 }
 
 .head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 3.3rem;
   padding-bottom: 5.5rem;
-  background-color: #f2f1f1;
+  background-color: rgb(242, 241, 241);
 }
-
 .head__title {
   margin-bottom: 2.2rem;
   font-size: 2.3rem;
-  color: #0d0d0d;
+  color: rgb(13, 13, 13);
 }
-
 .head__first-paragraph {
   margin-bottom: 5.5rem;
   font-size: 1.6rem;
@@ -402,52 +443,71 @@ body {
   padding-left: 1.5rem;
 }
 
-/*I think I will write here and than as I continue I will divide it slowly 
-because I am getting panicky for the moment and I need to feel calm to continue*/
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #716d72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: loader-wrapper;
+          animation-name: loader-wrapper;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  border: 4px solid rgb(220, 121, 202);
+  -webkit-animation: loader 4s infinite ease;
+          animation: loader 4s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(209, 49, 180);
+  -webkit-animation: loader-inner 4s infinite ease-in;
+          animation: loader-inner 4s infinite ease-in;
+}
+
 .link {
   text-decoration: none;
   color: black;
 }
 
 .restaurants {
-  background-color: #f0e9e9;
+  background-color: rgb(240, 233, 233);
   margin-top: 4rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .restaurants__text {
   font-size: 2.5rem;
   font-weight: bold;
   padding-bottom: 2rem;
   padding-left: 1rem;
 }
-
 .restaurants__first-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding-bottom: 2rem;
 }
-
 .restaurants__sec-row {
   margin-left: 54rem;
 }
-
 .restaurants__fig {
   width: 42rem;
   height: 28rem;
@@ -455,37 +515,32 @@ because I am getting panicky for the moment and I need to feel calm to continue*
   border-radius: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  -webkit-box-shadow: 5px 10px 10px px #bfbcbc;
-          box-shadow: 5px 10px 10px px #bfbcbc;
+  box-shadow: 5px 10px 10px px rgb(191, 188, 188);
 }
-
 .restaurants__fig__img {
   width: 42rem;
   height: 22rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
-
 .restaurants__fig__figcaption {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
-
 .restaurants__fig__new {
   position: relative;
   text-align: center;
 }
-
 .restaurants__fig__new__top-right {
   position: absolute;
   top: 1.5rem;
   right: 2rem;
   background-color: aquamarine;
-  color: #716e6e;
+  color: rgb(113, 110, 110);
   font-size: 1.5rem;
-  padding: .2rem 2.5rem .2rem 2.5rem;
+  padding: 0.2rem 2.5rem 0.2rem 2.5rem;
 }
 
 .New-York {
@@ -493,16 +548,9 @@ because I am getting panicky for the moment and I need to feel calm to continue*
 }
 
 .div-nameRestaurant-heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .restaurants__fig__name {
@@ -518,18 +566,10 @@ because I am getting panicky for the moment and I need to feel calm to continue*
 }
 
 .header-sec-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-
 .header-sec-page__arrow {
   text-decoration: none;
   color: black;
@@ -558,7 +598,6 @@ because I am getting panicky for the moment and I need to feel calm to continue*
   padding-left: 2rem;
   position: absolute;
 }
-
 .restaurant__name {
   font-size: 3rem;
   font-weight: bold;
@@ -568,82 +607,56 @@ because I am getting panicky for the moment and I need to feel calm to continue*
 }
 
 .div-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .restaurant__dishes__div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+  margin-right: 2rem;
 }
 
 .restaurant__dishes__up {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding-bottom: 2rem;
 }
 
 .restaurant__dishes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 3rem;
 }
-
 .restaurant__dishes--3 {
   margin-left: 47rem;
   margin-right: 45rem;
 }
-
 .restaurant__dishes--animated-1 {
   -webkit-animation: moveInBottom 2s ease-out;
           animation: moveInBottom 2s ease-out;
 }
-
 .restaurant__dishes--animated-2 {
   -webkit-animation: moveInBottom 2s ease-out;
           animation: moveInBottom 2s ease-out;
-  -webkit-animation-delay: .05s;
-          animation-delay: .05s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
 }
-
 .restaurant__dishes--animated-3 {
   -webkit-animation: moveInBottom 2s ease-out;
           animation: moveInBottom 2s ease-out;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .dishes-order {
   font-size: 1.6rem;
   padding-top: 3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   -webkit-text-decoration: double;
           text-decoration: double;
 }
-
 .dishes-order__underline {
   border: 2px solid #99E2D0;
   height: 3px;
@@ -652,164 +665,101 @@ because I am getting panicky for the moment and I need to feel calm to continue*
   margin-left: 4px;
 }
 
-.dishes {
-  border: 1px solid #bfbcbc;
-  -webkit-box-shadow: 1px 3px 10px 3px #bfbcbc;
-          box-shadow: 1px 3px 10px 3px #bfbcbc;
+.dish {
+  border: 1px solid rgb(191, 188, 188);
+  box-shadow: 1px 3px 10px 3px rgb(191, 188, 188);
   font-size: 1.4rem;
   border-radius: 1.5rem;
   margin-bottom: 1.5rem;
   height: 7rem;
-  width: 48rem;
+  width: 45rem;
   padding: 1rem;
-  padding-bottom: 2rem;
-}
-
-.dishes--1 {
-  margin-right: 5rem;
-}
-
-.dishes__name {
-  display: block;
-  padding-bottom: 1rem;
-  font-weight: bolder;
-}
-
-.dishes__price {
-  padding-left: 3rem;
-  padding-right: 1rem;
-  font-weight: bolder;
-}
-
-.dishes__ingredients {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
-
-.try {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.dish:hover #green-box {
+  transform: translateX(-6rem);
+}
+.dish:hover #price {
+  transform: translateX(-6rem);
+}
+.dish:hover #writtings {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish:hover #check-rotate {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.dish #check-rotate {
+  -webkit-animation-name: rotate-reverse;
+          animation-name: rotate-reverse;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.dish__box {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  /*&:hover > .try__ingredients__dish{
-        animation: textRetreat 1s ease-out;
-        animation-fill-mode: forwards;  
-    }*/
-  /*&:hover > .try__writtings{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }*/
-  /* &:hover  .try__price{
-        animation: shiftPrice 1s;
-
-     }*/
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.try__green-box {
-  display: inline;
-  padding: 1rem 2rem 0rem 2rem;
-  border-bottom-right-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-  background-color: #79c9b5;
-  margin-left: -1rem;
-  margin-bottom: 1.4rem;
-  opacity: 0;
-}
-
-.try:hover > .try__green-box {
-  -webkit-animation: shiftButton 2s ease-out;
-          animation: shiftButton 2s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  /*&:hover{
-            animation: rotate 2s infinite;
-        }*/
-}
-
-.try__dishes {
-  border: 1px solid #bfbcbc;
-  -webkit-box-shadow: 1px 3px 10px 3px #bfbcbc;
-          box-shadow: 1px 3px 10px 3px #bfbcbc;
-  font-size: 1.4rem;
-  border-radius: 1.5rem;
-  margin-bottom: 1.5rem;
-  height: 7rem;
-  width: 48rem;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.dish__desc-price {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.try__writtings {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.dish__green-box {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  padding: 2rem 3rem;
+  margin: -1.2rem 0rem;
+  background-color: #99E2D0;
+  width: 14%;
+  border-radius: 0 15px 15px 0;
+  margin-right: -8rem;
+  transition: all 2s;
 }
-
-.try__price {
+.dish__price {
   font-weight: bolder;
   display: inline;
   margin-top: 3rem;
-  margin-right: 1rem;
-  position: relative;
+  transition: transform 2s;
 }
-
-.try__writtings:hover + .try__price {
-  -webkit-animation: shiftPrice 1s ease-out;
-          animation: shiftPrice 1s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.try__ingredients-dish {
-  margin-top: -.5rem;
+.dish__ingredients-dish {
+  margin-top: -0.5rem;
   padding-bottom: 1.5rem;
 }
-
-.try__ingredients-dish::before {
-  content: "\A";
+.dish__ingredients-dish::before {
+  content: "\a";
   white-space: pre;
+  transition: transform 2s;
 }
-
-.try__name-dish {
+.dish__name-dish {
   font-weight: bolder;
 }
 
 .fa-circle-check {
   margin-top: 0.5rem;
-  font-size: 2.5rem;
   color: white;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa-circle-check:hover {
-  -webkit-animation: rotate 2s infinite;
-          animation: rotate 2s infinite;
-}
-/*# sourceMappingURL=main.css.map */
+.div-price-greenBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1rem;
+}/*# sourceMappingURL=main.css.map */

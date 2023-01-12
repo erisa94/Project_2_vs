@@ -1,0 +1,244 @@
+.fa-arrow-left{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-right:62rem;
+    margin-left: 2rem;
+   }
+   .header-sec-page{
+       display: flex;
+       flex-direction:row;
+       justify-content: flex-start;
+   
+       &__arrow{
+           text-decoration: none;
+           color: black;
+       }
+   }
+   .img-restaurant{
+       max-width: 100%; 
+       //height: auto;
+       clip-path: inset(40% 0% 40% 0%);
+       margin-top: -40rem;
+       margin-bottom: -40rem;
+       display: inline;
+       padding-bottom: 1rem;
+       border-bottom-left-radius: -1rem;
+       position: relative;
+       object-fit: cover;
+       object-position: center center;
+       height: 220px;
+   }
+
+   
+//////////////
+   .restaurant{
+   background-color: #f2f2f2;
+    padding-top: 3rem;
+    margin-top: -3.5rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding-right:1.2rem;
+    padding-left:2rem;
+    position:absolute; 
+    
+    &__name{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Shrikhand, cursive;
+        white-space: nowrap;
+        //margin-right: 115rem;
+    }
+    }
+
+    .div-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
+
+    .restaurant__dishes__div{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+    }
+   
+    .restaurant__dishes__up{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+     
+   .restaurant__dishes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    &--3{
+        margin-left:47rem;
+        margin-right: 45rem;
+    }
+   
+    
+    &--animated-1{
+        animation: moveInBottom 2s ease-out;
+        
+    }
+
+    &--animated-2{
+        animation: moveInBottom 2s ease-out;
+        animation-delay: .05s;
+        
+    }
+
+    &--animated-3{
+        animation: moveInBottom 2s ease-out;
+        animation-delay: .2s;
+    
+    }
+
+
+}
+
+///////
+.dishes-order{
+       
+    font-size: 1.6rem;
+    padding-top: 3rem;
+    margin-bottom: .5rem;
+    text-decoration: double;
+    &__underline{
+        border: 2px solid #99E2D0;
+        height:3px;
+        width:4rem;
+        margin-bottom: 1.5rem;
+        margin-left: 4px;
+    }
+}
+
+////
+.dishes{
+    @include dishes;
+    
+
+    &--1{
+        margin-right: 5rem;
+    }
+
+    &__name{
+        display: block;
+        padding-bottom: 1rem;
+        font-weight:bolder;
+    }
+
+    &__price{
+        padding-left: 3rem;
+        padding-right: 1rem;
+        font-weight: bolder;
+    }
+
+    &__ingredients{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+
+    }
+
+}
+/////
+.dish{
+    @include dishes;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    overflow: hidden;
+    
+
+    &:hover #green-box{
+        transform: translateX(-6rem);
+    }
+
+    &:hover #price{
+        transform: translateX(-6rem);
+    }
+    &:hover #writtings{
+        width:60%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover #check-rotate{
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
+    & #check-rotate{
+        animation-name: rotate-reverse;
+        animation-duration: .7s;
+        animation-timing-function: ease-in-out;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__desc-price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__green-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        padding: 2rem 3rem;
+        margin: -1.2rem 0rem;
+        background-color: #99E2D0;
+        width: 14%;
+        border-radius: 0 15px 15px 0;
+        margin-right: -8rem;
+        transition: all 2s;
+ 
+    }
+
+    &__price{
+        font-weight: bolder;
+        display: inline;
+        margin-top: 3rem;
+        transition: transform 2s;
+        }
+    
+    &__ingredients-dish{
+        margin-top: -.5rem;
+        padding-bottom: 1.5rem;
+       &::before{
+       content: "\A";
+       white-space: pre;
+       transition: transform 2s;
+
+       }
+    }
+
+    &__name-dish{
+    font-weight: bolder;
+    }
+     
+}
+
+.fa-circle-check{
+    margin-top: 0.5rem;
+    color:white;  
+    font-size:2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-price-greenBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+  
+   

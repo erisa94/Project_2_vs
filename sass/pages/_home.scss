@@ -40,3 +40,123 @@
     padding-left:1.5rem;
     
 }
+//loader
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-color: #716d72;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loader-wrapper;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    border: 4px solid rgb(220, 121, 202);
+    animation: loader 4s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(209, 49, 180);
+    animation: loader-inner 4s infinite ease-in;
+  }
+
+  //
+  .link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.restaurants{
+    background-color: rgb(240, 233, 233);
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    &__text{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+
+    &__first-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    &__sec-row{
+        margin-left: 54rem;
+    }
+    &__fig{
+        width:42rem;
+        height:28rem;
+        background-color: white;
+        border-radius: 2rem;
+        margin-left:1rem;
+        margin-right:1rem;
+        box-shadow:5px 10px 10px px rgb(191, 188, 188) ;
+        &__img{
+            width:42rem;
+            height:22rem; 
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+
+        }
+
+        &__figcaption{
+            padding-left:1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        
+        }
+
+        &__new{
+            position:relative;
+            text-align:center;
+        
+            &__top-right {
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+                background-color: aquamarine;
+                color:rgb(113, 110, 110);
+                font-size: 1.5rem;
+                padding: .2rem 2.5rem .2rem 2.5rem;
+              }
+        }
+    }
+
+    
+}
+.New-York{
+    font-size: 1.4rem;
+   
+}
+
+.div-nameRestaurant-heart{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.restaurants__fig__name{
+    font-size:1.8rem;
+    font-weight: bold;  
+    
+}
